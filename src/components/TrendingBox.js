@@ -15,9 +15,11 @@ const TrendingBox = () => {
     },[])
 
     return (
-        <div>
+        <div className='trendingBox'>
             <h2>Trending</h2>
-            {popular.slice(1,4).map((popularMovie) => <Trending  key={popularMovie.id} {...popularMovie}/>)}
+            <div className="trendingSlide">
+                {popular.slice(1,4).map((popularMovie) => <Trending  key={popularMovie.id} {...popularMovie}/>)}
+            </div>
         </div>
     );
 };

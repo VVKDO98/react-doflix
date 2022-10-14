@@ -15,7 +15,7 @@ function App() {
         <Route path="/search" element={<Search/>} />
         <Route path="/profile/" element={<Profile/>} />
       </Routes>
-      <Navbar/>
+      {/* <Navbar/> */}
     </div>
   );
 }

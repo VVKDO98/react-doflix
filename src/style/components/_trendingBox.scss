@@ -1,0 +1,30 @@
+.trendingBox{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.trending__card{
+    width: 70%;
+    height: 350px;
+    margin: 25px auto 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+}
+
+.trending__banner{
+    height: 80px;
+    width: 80%;
+    bottom: 20px;
+    position: absolute;
+    background-color: #dadada31;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
