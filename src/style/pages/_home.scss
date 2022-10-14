@@ -1,0 +1,50 @@
+.home{
+    .movieSpotlight{
+        width: 90%;
+        height: 200px;
+        margin: auto;
+        position: relative;
+    }
+    .movieSpotlight__banner{
+        height: 60px;
+        width: 80%;
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+        background-color: #dadada31;
+        border-radius: 20px;
+        backdrop-filter: blur(8px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .movieSpotlight__side{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .movieSpotlight__title{
+                color: #BCBCBC;
+                font-weight: 300;
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+            p{
+                margin: 0;
+            }
+        }
+        
+    }
+    .movieSpotlight__image{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+        border-radius: 30px;
+        img{
+            min-width: 100%;
+        };
+    }
+}

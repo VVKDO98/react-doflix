@@ -18,7 +18,7 @@ const Home = () => {
     },[])
 
     return (
-        <div>
+        <div className='home'>
             {popular.slice(0,1).map((popularMovie) => <MovieSpotlight  key={popularMovie.id} {...popularMovie}/>)}
             <TrendingBox/>
         </div>
