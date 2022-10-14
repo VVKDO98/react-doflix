@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {Routes, Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -12,8 +13,6 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/search" element={<Search/>} />
         <Route path="/profile/" element={<Profile/>} />
-        {/* Chemin dynamique */}
-        {/* <Route path="/profile/:id" element={<Profile/>} /> */}
       </Routes>
     </div>
   );
