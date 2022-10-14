@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import MovieSpotlight from '../components/MovieSpotlight';
-import Trending from '../components/Trending';
-import TrendingBox from '../components/TrendingBox';
+import Trending from './Trending';
 
-
-const Home = () => {
+const TrendingBox = () => {
     const API_POPULAR = "https://api.themoviedb.org/3/movie/popular?api_key=ef32645a58fd6506e28924ca1e4c975e"
     const [popular, setPopular] = useState([]);
 
@@ -19,10 +16,10 @@ const Home = () => {
 
     return (
         <div>
-            {popular.slice(0,1).map((popularMovie) => <MovieSpotlight  key={popularMovie.id} {...popularMovie}/>)}
-            <TrendingBox/>
+            <h2>Trending</h2>
+            {popular.slice(1,4).map((popularMovie) => <Trending  key={popularMovie.id} {...popularMovie}/>)}
         </div>
     );
 };
 
-export default Home;
+export default TrendingBox;

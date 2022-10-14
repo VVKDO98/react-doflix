@@ -1,28 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import MovieBox from '../components/MovieBox';
+import MovieBox from '../components/MovieSpotlight';
 
 
 const Search = () => {
     const [movies, setMovies] = useState([]);
 
-    const API_URL = "https://api.themoviedb.org/3/movie/popular?api_key=ef32645a58fd6506e28924ca1e4c975e"
-    
-    useEffect(() => {
-        fetch(API_URL)
-        .then((res)=>res.json())
-        .then(data=>{
-            console.log(data);
-            setMovies(data.results)
-        })
-    },[])
+    const API = "";
+    // useEffect(() => {
+    //     fetch(API_URL)
+    //     .then((res)=>res.json())
+    //     .then(data=>{
+    //         console.log(data);
+    //         setMovies(data.results)
+    //     })
+    // },[])
 
     return (
         <div>
-            <h1>Search</h1>
+            <input type="search" name="" id="" />
             <div>
-                {movies.map((movieReq) => 
-                <MovieBox key={movieReq.id} {...movieReq}/>)}
+                {/* {movies.map((movieReq) => 
+                <MovieBox key={movieReq.id} {...movieReq}/>)} */}
             </div>
         </div>
     );
