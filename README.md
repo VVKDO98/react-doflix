@@ -12,6 +12,10 @@ I'm trying to recreate the Netflix platform without a Figma model and only with 
 - [ ] Research
 - [ ] ...
 
+## Link 
+
+Here you can see [the deployed project.](https://react-netflix-vvkdo.netlify.app/)
+
 ## React components
 
 - [Axios](https://www.npmjs.com/package/axios)
