@@ -1,8 +1,16 @@
 @import 'reset',"home","components/header";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+html{
+  font-family: 'Open sans', sans-serif;
+}
 body{
     background-color: black;
     width: 100vw;
     position: relative;
     height: 3000px;
     overflow-x: hidden;
+    &::-webkit-scrollbar {
+        display: none;
+      }
 }
+
