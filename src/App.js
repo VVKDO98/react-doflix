@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
 import {Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Search from "./pages/Search";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
         <Route path="/search" element={<Search/>} />
         <Route path="/profile/" element={<Profile/>} />
       </Routes>
-      {/* <Navbar/> */}
+      <Navbar/>
     </div>
   );
 }

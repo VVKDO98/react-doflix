@@ -1,9 +1,10 @@
 import React from 'react';
+import Netflix from '../../public/assets/img/netflix.png'
 
 const Header = () => {
     return (
         <div>
-            <h1>DOFLIX</h1>
+            <img src={Netflix} alt="" />
         </div>
     );
 };
