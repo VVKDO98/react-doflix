@@ -324,7 +324,7 @@ template {
 }
 .home__hero .hero__content {
   width: 40%;
-  margin-left: 90px;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -381,7 +381,7 @@ template {
   gap: 30px;
 }
 .header .header__block--left {
-  margin-left: 30px;
+  margin-left: 50px;
 }
 .header .header__block--mid {
   width: 100%;
@@ -402,7 +402,7 @@ template {
   color: #b3b3b3;
 }
 .header .header__block--right {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .header__active {
