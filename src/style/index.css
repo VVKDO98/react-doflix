@@ -323,7 +323,7 @@ template {
   background-position: center center;
 }
 .home__hero .hero__content {
-  width: 30%;
+  width: 40%;
   margin-left: 90px;
   display: flex;
   flex-direction: column;
@@ -372,7 +372,8 @@ template {
   justify-content: space-between;
   align-items: center;
   background: rgb(18, 18, 18);
-  background: linear-gradient(180deg, rgba(18, 18, 18, 0.8519782913) 16%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgb(18, 18, 18) 0%, rgba(18, 18, 18, 0.3869922969) 70%, rgba(255, 255, 255, 0) 100%);
+  transition: all 0.3s ease-in;
 }
 .header .header__block {
   display: flex;
@@ -402,6 +403,10 @@ template {
 }
 .header .header__block--right {
   margin-right: 30px;
+}
+
+.header__active {
+  background: #000;
 }
 
 html {

@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Navbar';
 
 const Header = () => {
+    const [scroll, setScroll] = useState(false);
+
+    const changeColorHeader = () => {
+        if(window.scrollY >= 80){
+            setScroll(true)
+        } else {
+            setScroll(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeColorHeader);
+
     return (
-        <div className='header'>
+        <div className={scroll ? 'header header__active' : 'header'}>
             <div className='header__block header__block--left'>
                 <img src={process.env.PUBLIC_URL + "/assets/img/netflix.png"} alt="Logo Netflix" height="30px" />
             </div>
