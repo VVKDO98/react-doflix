@@ -358,6 +358,7 @@ template {
   background-color: rgba(109, 109, 110, 0.4);
 }
 .home__hero .hero__content .hero__description {
+  width: 80%;
   color: #fff;
   line-height: 150%;
   font-size: 1em;
