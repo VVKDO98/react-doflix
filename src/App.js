@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Search from "./pages/Search";
-// import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <Route path="/search" element={<Search/>} />
         <Route path="/profile/" element={<Profile/>} />
       </Routes>
-      {/* <Navbar/> */}
     </div>
   );
 }
