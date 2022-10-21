@@ -417,9 +417,28 @@ template {
   width: 100%;
 }
 
+.carousel {
+  overflow: hidden;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.inner-carousel {
+  display: flex;
+}
+
+.item {
+  padding: 10px;
+}
+.item img {
+  width: 200px;
+  pointer-events: none;
+}
+
 html {
   font-family: "Open sans", sans-serif;
   font-size: 16px;
+  color: #fff;
 }
 
 body {
