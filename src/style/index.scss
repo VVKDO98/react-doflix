@@ -1,7 +1,9 @@
-@import 'reset',"home","components/header";
+@import 'reset',"home","components/header","components/hero","components/moviesList";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 html{
   font-family: 'Open sans', sans-serif;
+  font-size: 16px;
 }
 body{
     background-color: black;

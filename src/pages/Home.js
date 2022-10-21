@@ -1,19 +1,34 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import Hero from '../components/Hero';
+import MoviesList from '../components/MoviesList';
+
+  
+
 
 
 const Home = () => {
+    const API_POPULAR = "https://api.themoviedb.org/3/movie/popular?api_key=ef32645a58fd6506e28924ca1e4c975e&language=en-US&page=1";
+    const [movies, setMovies] = useState([]);
+
+    useEffect(() => {
+        axios.get(API_POPULAR)
+        .then((response) => setMovies(response.data.results));
+    }, []);
+
+    // console.log(movies);
+
+    const renderMoviesList = () => (
+        movies.map((movie) => <MoviesList key={movie.id} movie={movie} /> )
+    );
+
     return (
         <div className='home'>
-            <div className='home__hero'>
-                <div className='hero__content'>
-                    <img className='hero__image' src={process.env.PUBLIC_URL + "/assets/img/logofilm.png"} alt="" width="400px" />
-                    <p className='hero__description'>Four years after the events of Halloween in 2018, Laurie has decided to liberate herself from fear and rage and embrace life.</p>
-                    <div className='hero__buttons'>
-                        <button className='hero__button hero__button--white'><i className="fa-solid fa-play"></i>  Reading</button>
-                        <button className='hero__button hero__button--black'><i className="fa-solid fa-plus"></i>  Add to list</button>
-                    </div>
-                </div>
-                {/* <img className='home__background' src={process.env.PUBLIC_URL + "/assets/img/bg.jpg"} alt="Logo Netflix" /> */}
+            <Hero/>
+            <div className='swiper'>
+            <div className='home__list home__list--popular swiper-wrapper'>
+                {renderMoviesList()}
+            </div>
             </div>
         </div>
     );
