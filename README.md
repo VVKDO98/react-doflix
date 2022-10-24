@@ -20,11 +20,11 @@ I'm trying to recreate the Netflix platform without a Figma model and only with 
 - [ ] Information on click
 - [ ] ...
 
-<!-- ## Link 
+## Link 
 
-Here you can see [the deployed project.](https://react-netflix-vvkdo.netlify.app/) -->
+Here you can see [the deployed project.](https://netflix-react-vvkdo98.netlify.app/)
 
 ## React components
 
-- [Axios](https://www.npmjs.com/package/axios)
 - [React Router V6](https://reactrouter.com/en/main)
+- [Swiper](https://swiperjs.com/)
