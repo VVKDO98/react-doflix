@@ -11,6 +11,7 @@ const Hero = () => {
                     <button className='hero__button hero__button--black'><i className="fa-solid fa-plus"></i>  Add to list</button>
                 </div>
             </div>
+            <div className="hero__shade"></div>
         </div>
     );
 };

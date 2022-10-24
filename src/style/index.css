@@ -324,6 +324,7 @@ template {
   background: rgb(18, 18, 18);
   background: linear-gradient(180deg, rgb(18, 18, 18) 0%, rgba(18, 18, 18, 0.3869922969) 70%, rgba(255, 255, 255, 0) 100%);
   transition: all 0.3s ease-in;
+  z-index: 50;
 }
 .header .header__block {
   display: flex;
@@ -367,6 +368,7 @@ template {
   background-image: url("../../public/assets/img/bg.jpg");
   background-size: cover;
   background-position: center center;
+  position: relative;
 }
 .home__hero .hero__content {
   width: 40%;
@@ -409,12 +411,13 @@ template {
   line-height: 150%;
   font-size: 1em;
 }
-
-.home__list {
-  display: flex;
-}
-.home__list .list__movie {
+.home__hero .hero__shade {
   width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.3869922969) 70%, rgba(255, 255, 255, 0) 100%);
 }
 
 .main__carousel {
@@ -422,16 +425,15 @@ template {
   cursor: -webkit-grab;
   cursor: grab;
 }
-
-.inner__carousel {
+.main__carousel .inner__carousel {
   display: flex;
 }
-
-.item__carousel {
-  padding: 10px;
+.main__carousel .inner__carousel .item__carousel {
+  padding: 3px;
+  width: 220px;
 }
-.item__carousel img {
-  width: 200px;
+.main__carousel .inner__carousel .item__carousel .item__image {
+  width: 220px;
   pointer-events: none;
 }
 
