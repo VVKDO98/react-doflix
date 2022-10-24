@@ -21,22 +21,16 @@ const Home = () => {
         setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
     }, []);
 
-    useEffect(() => {
-        axios.get(API_POPULAR)
-        .then((response) => setPopular(response.data.results));
-    }, []);
+    function fetcher(api, setter){
+        fetch(api)
+        .then((response) => response.json())
+        .then((data) => setter(data.results));
+    }
+    
 
-    useEffect(() => {
-        axios.get(API_TOPRATED)
-        .then((response) => setTopRated(response.data.results));
-    }, []);
-
-    useEffect(() => {
-        axios.get(API_TVSHOWS)
-        .then((response) => setTvShows(response.data.results));
-    }, []);
-
-    // console.log(movies);
+    fetcher(API_POPULAR, setPopular);
+    fetcher(API_TOPRATED, setTopRated);
+    fetcher(API_TVSHOWS, setTvShows);
 
     const renderMoviesList = (list) => (
         list.map((movie) => <MoviesItem key={movie.id} movie={movie} /> )
