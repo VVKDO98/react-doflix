@@ -1,8 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Hero from '../components/Hero';
 import MoviesItem from '../components/MoviesItem';
-import { motion } from 'framer-motion';
 import Footer from '../components/Footer';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+
+import "swiper/css";
+import "swiper/css/navigation";
 
 
 const Home = () => {
@@ -13,13 +17,6 @@ const Home = () => {
     const [popular, setPopular] = useState([]);
     const [toprated, setTopRated] = useState([]);
     const [tvshow, setTvShows] = useState([]);
-    
-    const [width, setWidth] = useState(0);
-    const carousel= useRef();
-
-    useEffect(() => {
-        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-    }, []);
 
     function fetcher(api, setter){
         fetch(api)
@@ -32,7 +29,7 @@ const Home = () => {
     fetcher(API_TVSHOWS, setTvShows);
 
     const renderMoviesList = (list) => (
-        list.map((movie) => <MoviesItem key={movie.id} movie={movie} /> )
+        list.map((movie) => <SwiperSlide><MoviesItem key={movie.id} movie={movie} /></SwiperSlide> )
     );
 
     return (
@@ -42,27 +39,45 @@ const Home = () => {
                 <div className="home__list">
                     <div className="list__carousel">
                         <h2>Popular</h2>
-                        <motion.div ref={carousel} className='main__carousel' whileTap={{cursor: "grabbing"}}>
-                            <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className='inner__carousel'>
-                                {renderMoviesList(popular)}
-                            </motion.div>
-                        </motion.div>
+                        <Swiper
+                            slidesPerView={7}
+                            spaceBetween={3}
+                            slidesPerGroup={7}
+                            loop={true}
+                            loopFillGroupWithBlank={false}
+                            navigation={true}
+                            modules={[Navigation]}
+                        >
+                            {renderMoviesList(popular)}
+                        </Swiper>
                     </div>
                     <div className="list__carousel">
-                        <h2>Top Rated</h2>
-                        <motion.div ref={carousel} className='main__carousel' whileTap={{cursor: "grabbing"}}>
-                            <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className='inner__carousel'>
-                                {renderMoviesList(toprated)}
-                            </motion.div>
-                        </motion.div>
+                        <h2>Popular</h2>
+                        <Swiper
+                            slidesPerView={7}
+                            spaceBetween={3}
+                            slidesPerGroup={7}
+                            loop={true}
+                            loopFillGroupWithBlank={false}
+                            navigation={true}
+                            modules={[Navigation]}
+                        >
+                            {renderMoviesList(toprated)}
+                        </Swiper>
                     </div>
                     <div className="list__carousel">
-                        <h2>Most popular series</h2>
-                        <motion.div ref={carousel} className='main__carousel' whileTap={{cursor: "grabbing"}}>
-                            <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className='inner__carousel'>
-                                {renderMoviesList(tvshow)}
-                            </motion.div>
-                        </motion.div>
+                        <h2>Popular</h2>
+                        <Swiper
+                            slidesPerView={7}
+                            spaceBetween={3}
+                            slidesPerGroup={7}
+                            loop={true}
+                            loopFillGroupWithBlank={false}
+                            navigation={true}
+                            modules={[Navigation]}
+                        >
+                            {renderMoviesList(tvshow)}
+                        </Swiper>
                     </div>
                 </div>
             </div>
