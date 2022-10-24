@@ -1,9 +1,12 @@
 import React from 'react';
+import Footer from '../components/Footer';
+import Hero from '../components/Hero';
 
 const Profile = () => {
     return (
         <div>
-            <h1>Profile</h1>
+            <Hero/>
+            <Footer/>
         </div>
     );
 };

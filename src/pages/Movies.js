@@ -1,11 +1,14 @@
 import React from 'react';
+import Footer from '../components/Footer';
+import Hero from '../components/Hero';
 
 
 const Search = () => {
 
     return (
         <div>
-            <h1>Hello</h1>
+            <Hero/>
+            <Footer/>
         </div>
     );
 };
