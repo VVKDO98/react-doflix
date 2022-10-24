@@ -52,7 +52,7 @@ const Home = () => {
                         </Swiper>
                     </div>
                     <div className="list__carousel">
-                        <h2>Popular</h2>
+                        <h2>Top rated</h2>
                         <Swiper
                             slidesPerView={7}
                             spaceBetween={3}
@@ -66,7 +66,7 @@ const Home = () => {
                         </Swiper>
                     </div>
                     <div className="list__carousel">
-                        <h2>Popular</h2>
+                        <h2>Most popular series</h2>
                         <Swiper
                             slidesPerView={7}
                             spaceBetween={3}
