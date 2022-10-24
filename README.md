@@ -1,16 +1,23 @@
 # Netflix integration with React ⚛
 
+![Banner Netflix integration](./public/assets/img/previewgit.png)
+
 I'm trying to recreate the Netflix platform without a Figma model and only with React. For the movie database, I use [Themoviedb API](https://www.themoviedb.org/) (not integrated for the moment in the project).
 
 ## To do
 
 - [x] Navbar
 - [x] Header
-- [ ] API Fetch
-- [ ] Movie list
-- [ ] Menu
-- [ ] Research
+- [x] API Fetch
+- [x] Movie list
+- [ ] Carousel
 - [ ] Responsive
+
+### Optional tasks
+
+- [ ] Other pages
+- [ ] Research
+- [ ] Information on click
 - [ ] ...
 
 ## Link 
