@@ -8,6 +8,7 @@
         display: flex;
         gap: 30px;
         margin-bottom: 15px;
+        font-size: 20px;
     }
     .footer__links{
         width: 50%;
@@ -16,10 +17,16 @@
         align-items: center;
         .links__list{
             list-style-type: none;
-            font-size: 13px;
-            color: #808080;
+            font-size: 12px;
             li{
                 margin-bottom: 15px;
+                a{
+                    color: #808080;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }

@@ -13,30 +13,30 @@ const Footer = () => {
             <div className="footer__links">
                 <div className="links_col">
                     <ul className='links__list'>
-                        <li>Audiodescription</li>
-                        <li>Investor Relations</li>
-                        <li>Legal information</li>
+                        <li><a href="/">Audiodescription</a></li>
+                        <li><a href="/">Investor Relations</a></li>
+                        <li><a href="/">Legal information</a></li>
                     </ul>
                 </div>
                 <div className="links_col">
                     <ul className='links__list'>
-                        <li>Help Center</li>
-                        <li>Recruitement</li>
-                        <li>Cookie preferences</li>
+                        <li><a href="/">Help Center</a></li>
+                        <li><a href="/">Recruitement</a></li>
+                        <li><a href="/">Cookie preferences</a></li>
                     </ul>
                 </div>
                 <div className="links_col">
                     <ul className='links__list'>
-                        <li>Gift cards</li>
-                        <li>Terms of use</li>
-                        <li>Legal Notice</li>
+                        <li><a href="/">Gift cards</a></li>
+                        <li><a href="/">Terms of use</a></li>
+                        <li><a href="/">Legal Notice</a></li>
                     </ul>
                 </div>
                 <div className="links_col">
                     <ul className='links__list'>
-                        <li>Hurry</li>
-                        <li>Privacy</li>
-                        <li>Contact us</li>
+                        <li><a href="/">Hurry</a></li>
+                        <li><a href="/">Privacy</a></li>
+                        <li><a href="/">Contact us</a></li>
                     </ul>
                 </div>
             </div>

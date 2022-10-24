@@ -6,11 +6,12 @@ h2{
     .home__lists{
         margin-left: 50px;
         .home__list{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            height: 100%;
             position: relative;
             top: -120px;
-            .list__carousel{
-                margin-bottom: 50px;
-            }
         }
     }
 }
