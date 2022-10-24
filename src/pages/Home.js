@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, { useEffect, useRef, useState } from 'react';
 import Hero from '../components/Hero';
 import MoviesItem from '../components/MoviesItem';
@@ -27,7 +26,6 @@ const Home = () => {
         .then((data) => setter(data.results));
     }
     
-
     fetcher(API_POPULAR, setPopular);
     fetcher(API_TOPRATED, setTopRated);
     fetcher(API_TVSHOWS, setTvShows);
