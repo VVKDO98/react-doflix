@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Hero from '../components/Hero';
 import MoviesItem from '../components/MoviesItem';
 import Footer from '../components/Footer';
@@ -18,15 +18,17 @@ const Home = () => {
     const [toprated, setTopRated] = useState([]);
     const [tvshow, setTvShows] = useState([]);
 
-    function fetcher(api, setter){
-        fetch(api)
-        .then((response) => response.json())
-        .then((data) => setter(data.results));
-    }
-    
-    fetcher(API_POPULAR, setPopular);
-    fetcher(API_TOPRATED, setTopRated);
-    fetcher(API_TVSHOWS, setTvShows);
+    useEffect(() => {
+        function fetchApi(api, setter){
+            fetch(api)
+            .then(response => response.json())
+            .then(data => setter(data.results))
+        }
+
+        fetchApi(API_POPULAR, setPopular);
+        fetchApi(API_TOPRATED, setTopRated);
+        fetchApi(API_TVSHOWS, setTvShows);
+    },[])
 
     const renderMoviesList = (list) => (
         list.map((movie) => <SwiperSlide><MoviesItem key={movie.id} movie={movie} /></SwiperSlide> )
