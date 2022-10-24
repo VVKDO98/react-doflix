@@ -10,7 +10,7 @@ I'm trying to recreate the Netflix platform without a Figma model and only with 
 - [x] Header
 - [x] API Fetch
 - [x] Movie list
-- [ ] Carousel
+- [x] Carousel
 - [ ] Responsive
 
 ### Optional tasks
