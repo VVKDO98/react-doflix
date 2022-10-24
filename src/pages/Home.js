@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Hero from '../components/Hero';
 import MoviesItem from '../components/MoviesItem';
 import { motion } from 'framer-motion';
+import Footer from '../components/Footer';
 
 
 const Home = () => {
@@ -65,6 +66,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };

@@ -4,14 +4,13 @@ h2{
 .home{
     width: 100vw;
     .home__lists{
-        position: relative;
         margin-left: 50px;
-    }
-    .home__list{
-        position: absolute;
-        top: -120px;
-        .list__carousel{
-            margin-bottom: 50px;
+        .home__list{
+            position: relative;
+            top: -120px;
+            .list__carousel{
+                margin-bottom: 50px;
+            }
         }
     }
 }

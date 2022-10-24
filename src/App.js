@@ -7,14 +7,13 @@ import Search from "./pages/Search";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/search" element={<Search/>} />
         <Route path="/profile/" element={<Profile/>} />
       </Routes>
-      <Footer/>
     </div>
   );
 }
