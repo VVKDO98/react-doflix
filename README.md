@@ -22,7 +22,7 @@ I'm trying to recreate the Netflix platform without a Figma model and only with 
 
 ## Link 
 
-Here you can see [the deployed project.](https://netflix-react-vvkdo98.netlify.app/)
+Here you can see [the deployed project.](https://react-netflix-six.vercel.app/)
 
 ## React components
 

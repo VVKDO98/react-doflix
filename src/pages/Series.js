@@ -3,10 +3,11 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 
 const Profile = () => {
+    
     useEffect(() => {
         document.title = "Series - Netflix";  
       }, []);
-      
+
     return (
         <div>
             <Hero/>
