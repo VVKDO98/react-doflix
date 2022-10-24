@@ -10,6 +10,11 @@ import "swiper/css/navigation";
 
 
 const Home = () => {
+
+    useEffect(() => {
+        document.title = "Home - Netflix";  
+      }, []);
+
     const API_POPULAR = "https://api.themoviedb.org/3/movie/popular?api_key=ef32645a58fd6506e28924ca1e4c975e&language=en-US&page=1";
     const API_TOPRATED = "https://api.themoviedb.org/3/movie/top_rated?api_key=ef32645a58fd6506e28924ca1e4c975e&language=en-US&page=1";
     const API_TVSHOWS = "https://api.themoviedb.org/3/tv/popular?api_key=ef32645a58fd6506e28924ca1e4c975e&language=en-US&page=1";
