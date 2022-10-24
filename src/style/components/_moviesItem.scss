@@ -1,0 +1,16 @@
+.main__carousel{
+    overflow: hidden;
+    cursor: grab;
+    .inner__carousel{
+        display: flex;
+        .item__carousel{
+            padding: 3px;
+            width: 220px;
+            .item__image{
+                width: 220px;
+                pointer-events: none;
+                border-radius: 2px;
+            }
+        }
+    }
+}

@@ -309,8 +309,23 @@ template {
   display: none;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
 .home {
   width: 100vw;
+}
+.home .home__lists {
+  position: relative;
+  margin-left: 50px;
+}
+.home .home__list {
+  position: absolute;
+  top: -120px;
+}
+.home .home__list .list__carousel {
+  margin-bottom: 50px;
 }
 
 .header {
@@ -413,11 +428,11 @@ template {
 }
 .home__hero .hero__shade {
   width: 100%;
-  height: 100px;
+  height: 200px;
   position: absolute;
   bottom: 0;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.3869922969) 70%, rgba(255, 255, 255, 0) 100%);
+  background: rgb(20, 20, 20);
+  background: linear-gradient(0deg, rgb(20, 20, 20) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .main__carousel {
@@ -435,6 +450,7 @@ template {
 .main__carousel .inner__carousel .item__carousel .item__image {
   width: 220px;
   pointer-events: none;
+  border-radius: 2px;
 }
 
 html {
@@ -444,7 +460,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #141414;
   width: 100vw;
   position: relative;
   height: 3000px;

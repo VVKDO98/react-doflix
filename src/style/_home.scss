@@ -1,3 +1,18 @@
+h2{
+    
+    margin-bottom: 10px;
+}
 .home{
     width: 100vw;
+    .home__lists{
+        position: relative;
+        margin-left: 50px;
+    }
+    .home__list{
+        position: absolute;
+        top: -120px;
+        .list__carousel{
+            margin-bottom: 50px;
+        }
+    }
 }
