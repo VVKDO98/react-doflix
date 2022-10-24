@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useRef, useState } from 'react';
 import Hero from '../components/Hero';
-import MoviesList from '../components/MoviesList';
+import MoviesItem from '../components/MoviesItem';
 import { motion } from 'framer-motion';
 
 
@@ -23,16 +23,16 @@ const Home = () => {
     // console.log(movies);
 
     const renderMoviesList = () => (
-        movies.map((movie) => <MoviesList key={movie.id} movie={movie} /> )
+        movies.map((movie) => <MoviesItem key={movie.id} movie={movie} /> )
     );
 
     return (
         <div className='home'>
             <Hero/>
-            <div>
+            <div className='home__lists'>
                 <h2>Popular</h2>
-                <motion.div ref={carousel} className='carousel' whileTap={{cursor: "grabbing"}}>
-                    <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>
+                <motion.div ref={carousel} className='main__carousel' whileTap={{cursor: "grabbing"}}>
+                    <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className='inner__carousel'>
                         {renderMoviesList()}
                     </motion.div>
                 </motion.div>

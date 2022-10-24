@@ -5,16 +5,16 @@
     }
 }
 
-.carousel{
+.main__carousel{
     overflow: hidden;
     cursor: grab;
 }
 
-.inner-carousel{
+.inner__carousel{
     display: flex;
 }
 
-.item{
+.item__carousel{
     padding: 10px;
     img{
         width: 200px;

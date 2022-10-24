@@ -417,20 +417,20 @@ template {
   width: 100%;
 }
 
-.carousel {
+.main__carousel {
   overflow: hidden;
   cursor: -webkit-grab;
   cursor: grab;
 }
 
-.inner-carousel {
+.inner__carousel {
   display: flex;
 }
 
-.item {
+.item__carousel {
   padding: 10px;
 }
-.item img {
+.item__carousel img {
   width: 200px;
   pointer-events: none;
 }
